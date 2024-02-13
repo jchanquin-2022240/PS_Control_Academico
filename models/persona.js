@@ -16,7 +16,7 @@ const PersonaSchema = Schema({
     },
     cursos:{
         type: String,
-        required: [true, 'El curso es obligatorio']
+        default: "None"
     },
     role:{
         default: ["STUDENT_ROLE"],
