@@ -1,8 +1,8 @@
 const bcryptjs = require('bcryptjs');
-const Usuario = require('../models/persona');
+const Persona = require('../models/persona');
 const { response } = require('express');
 
-/*const personaGet = async (req, res = response) => {
+const personaGet = async (req, res = response) => {
     const {limite, desde} = req.query;
     const query = {estado: true}
 
@@ -17,11 +17,11 @@ const { response } = require('express');
         total,
         personas
     });
-}*/
+}
 
 const personasPost = async (req, res) => {
-    const {nombre, correo, password, cursos, role} = req.body;
-    const persona = new Persona({nombre, correo, password, cursos, role});
+    const {nombre, correo, password, role} = req.body;
+    const persona = new Persona({nombre, correo, password, role});
 
     const salt = bcryptjs.genSaltSync();
     persona.password = bcryptjs.hashSync(password, salt);
@@ -33,6 +33,6 @@ const personasPost = async (req, res) => {
 }
 
 module.exports = {
-    personasPost
-    //personaGet
+    personasPost,
+    personaGet
 }
