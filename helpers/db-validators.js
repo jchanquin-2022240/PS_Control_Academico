@@ -1,4 +1,6 @@
+const { Cursor } = require("mongoose");
 const Persona = require("../models/persona");
+const Curso = require("../models/curso");
 
 const existenteEmail = async (correo = '') => {
     const existeEmail = await Persona.findOne({correo});
@@ -7,6 +9,22 @@ const existenteEmail = async (correo = '') => {
     }
 }
 
+const existenteCurso = async (nombre = '') => {
+    const existeCurso = await Curso.findOne({nombre});
+    if(existeCurso){
+        throw new Error(`El curso ${ nombre } ya está registrado`); 
+    }
+}
+
+const codigoCursoExiste = async (codigoCurso = '') => {
+    const existeCodigoCurso = await Curso.findOne({codigoCurso});
+    if(existeCodigoCurso){
+        throw new Error(`El ${ codigoCurso } ya está registrado`);
+    }
+}
+
 module.exports = {
-    existenteEmail
+    existenteEmail,
+    existenteCurso,
+    codigoCursoExiste
 }
