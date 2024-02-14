@@ -16,12 +16,11 @@ const PersonaSchema = Schema({
     },
     cursos:{
         type: String,
-        required: [true, 'El curso es obligatorio']
+        default: "none"
     },
     role:{
         type: String,
         enum: ["TEACHER_ROLE", "STUDENT_ROLE"]
-
     },
     estado:{
         type: Boolean,
