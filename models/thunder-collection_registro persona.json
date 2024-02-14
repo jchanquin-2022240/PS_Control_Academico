@@ -1,0 +1,42 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "registro persona",
+    "dateExported": "2024-02-14T04:24:44.395Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6d7d49f8-6eef-4fdf-bd3f-d7d6f6067d46",
+            "colId": "f0796d6c-9f50-41e0-bbbd-074d45f49e34",
+            "containerId": "",
+            "name": "post persona",
+            "url": "http://localhost:3000/api/persona",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-14T02:01:30.813Z",
+            "modified": "2024-02-14T04:17:40.816Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"nombre\": \"Ana Paredes\",\r\n    \"correo\": \"aparedes@gmail.com\",\r\n    \"password\": \"12345678\",\r\n    \"role\": \"TEACHER_ROLE\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0ab5ab12-f584-4dd7-ad45-7005f916680d",
+            "colId": "f0796d6c-9f50-41e0-bbbd-074d45f49e34",
+            "containerId": "",
+            "name": "get persona",
+            "url": "http://localhost:3000/api/persona",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-14T04:22:21.780Z",
+            "modified": "2024-02-14T04:22:47.110Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
