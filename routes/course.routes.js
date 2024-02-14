@@ -5,13 +5,22 @@ const { validarCampos } = require ('../middlewares/validar-campos')
 
 const {
     cursosPost,
-    cursoGet} = require('../controller/course.controller');
+    cursoGet,
+    getCursoById} = require('../controller/course.controller');
 
 const { existenteCurso, codigoCursoExiste} = require('../helpers/db-validators');
 
 const router = Router();
 
 router.get("/", cursoGet); //listado de cursos
+
+router.get(
+    "/:id",
+    [
+        check('id', 'No es un nombre válido').isMongoId(),
+        check('id').custom(existenteCurso),
+        validarCampos
+    ], getCursoById);
 
 router.post(
     "/",
