@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "cursos",
+    "dateExported": "2024-02-14T23:24:22.623Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a08b7e1e-a196-4116-b8a0-e44b2354a861",
+            "colId": "bafcdaff-dda5-4db8-be14-50dba78dde45",
+            "containerId": "",
+            "name": "post cursos",
+            "url": "http://localhost:3000/api/curso",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-14T20:12:07.756Z",
+            "modified": "2024-02-14T22:09:36.662Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \"nombre\": \"Ingles\",\n  \"codigoCurso\": \"T2024\",\n  \"descripcion\": \"curso de ciencias exactas\",\n  \"maestro\": \"Brau\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bebf5a9f-32fd-4b92-a174-6c9ac964e492",
+            "colId": "bafcdaff-dda5-4db8-be14-50dba78dde45",
+            "containerId": "",
+            "name": "get cursos",
+            "url": "http://localhost:3000/api/curso",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-14T20:35:22.953Z",
+            "modified": "2024-02-14T20:35:30.144Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "85d4a359-1674-461b-b626-5dddedba08d0",
+            "colId": "bafcdaff-dda5-4db8-be14-50dba78dde45",
+            "containerId": "",
+            "name": "get cursoById",
+            "url": "http://localhost:3000/api/curso/65cd20112982ef5",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-14T22:24:58.836Z",
+            "modified": "2024-02-14T23:12:46.652Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "955564b7-6d12-48c8-af63-5e9cda1a438b",
+            "colId": "bafcdaff-dda5-4db8-be14-50dba78dde45",
+            "containerId": "",
+            "name": "put cursos",
+            "url": "http://localhost:3000/api/curso/65cd278e5a4ed981126891cb",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-14T22:54:18.031Z",
+            "modified": "2024-02-14T23:23:49.094Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \"nombre\": \"Literatura II\",\n  \"descripcion\": \"Curso de IDIOMA ESPAÑOL\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

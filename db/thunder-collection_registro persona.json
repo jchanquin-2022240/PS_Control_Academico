@@ -1,0 +1,42 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "registro persona",
+    "dateExported": "2024-02-14T23:24:43.535Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d181d60f-11ac-415b-ac41-482fa626dd74",
+            "colId": "a37cbcaa-4742-486f-804f-2b57afa50f35",
+            "containerId": "",
+            "name": "post persona",
+            "url": "http://localhost:3000/api/persona",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-14T19:09:37.006Z",
+            "modified": "2024-02-14T19:44:53.171Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nombre\": \"Sofia gomez\",\n    \"correo\": \"sgomez@gmail.com\",\n    \"password\": \"12345678\",\n    \"role\": \"STUDENT_ROLE\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "348d3982-674e-4f09-b4ff-86f8f2eb0c62",
+            "colId": "a37cbcaa-4742-486f-804f-2b57afa50f35",
+            "containerId": "",
+            "name": "get persona",
+            "url": "http://localhost:3000/api/persona",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-14T19:09:37.007Z",
+            "modified": "2024-02-14T19:09:37.007Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

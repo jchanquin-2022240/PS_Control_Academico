@@ -38,8 +38,23 @@ const cursosPost = async (req,res) => {
     });
 }
 
+const putCursos = async ( req, res, next ) => {
+    const { id } = req.params;
+    const { _id, codigoCurso,maestro,...resto} = req.body;
+
+    await Curso.findByIdAndUpdate(id, resto);
+    const curso = Curso.findOne({id});
+
+    res.status(200).json({  
+        mgs: `Curso actualizado Exitosamento`,
+        curso
+    });
+
+}
+
 module.exports = {
     cursosPost,
     cursoGet,
-    getCursoById
+    getCursoById,
+    putCursos
 }
