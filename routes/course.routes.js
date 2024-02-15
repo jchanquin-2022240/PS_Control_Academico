@@ -38,9 +38,7 @@ router.put(
     [
         check("id", 'No es un id válido').isMongoId(),
         check('id').custom(existenteCursoById),
-        check('nombre').custom(existenteCurso),
-        check("descripcion", "La descripción no puede estar vacía").not().isEmpty(),
-        validarCampos,
+        validarCampos
     ], putCursos);
 
 module.exports = router;

@@ -38,15 +38,16 @@ const cursosPost = async (req,res) => {
     });
 }
 
-const putCursos = async ( req, res, next ) => {
+const putCursos = async ( req, res) => {
     const { id } = req.params;
-    const { _id, codigoCurso,maestro,...resto} = req.body;
+    const { _id,nombre, codigoCurso,...resto} = req.body;
 
     await Curso.findByIdAndUpdate(id, resto);
     const curso = Curso.findOne({id});
 
-    res.status(200).json({  
-        mgs: `Curso actualizado Exitosamento`,
+    //problemas con el traslado de convertir a .JSON
+    res.status(200).json({
+        msg: 'Curso Actualizado Exitosamente!!!',
         curso
     });
 
