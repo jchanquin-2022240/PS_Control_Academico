@@ -1,4 +1,4 @@
-const { Cursor } = require("mongoose");
+const { Curso } = require("mongoose");
 const Persona = require("../models/persona");
 const Curso = require("../models/curso");
 
