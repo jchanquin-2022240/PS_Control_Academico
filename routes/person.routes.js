@@ -7,7 +7,7 @@ const {
     personasPost,
     personaGet} = require('../controller/person.controller');
 
-const { existenteEmail, existenteRole} = require('../helpers/db-validators');
+const { existenteEmail} = require('../helpers/db-validators');
 
 
 const router = Router();
@@ -21,7 +21,6 @@ router.post(
         check("password","El password debe ser mayor a 8 caracteres").isLength({min:8}),
         check("correo","El correo no puede estar vacio").isEmail(),
         check("correo").custom(existenteEmail),
-        check("role").custom(existenteRole),
         validarCampos,
     ], personasPost);
 
