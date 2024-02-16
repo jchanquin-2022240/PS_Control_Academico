@@ -53,9 +53,19 @@ const putCursos = async ( req, res) => {
 
 }
 
+const cursosDelete = async (req, res) => {
+    const {id} = req.params;
+    const curso = await Curso.findByIdAndUpdate(id, {estadoCurso: false});
+    
+    res.status(200).json({
+        msq: 'Curso eliminado'
+    });
+}
+
 module.exports = {
     cursosPost,
     cursoGet,
     getCursoById,
-    putCursos
+    putCursos,
+    cursosDelete
 }

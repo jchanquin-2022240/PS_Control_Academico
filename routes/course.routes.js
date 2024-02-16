@@ -7,7 +7,8 @@ const {
     cursosPost,
     cursoGet,
     getCursoById,
-    putCursos} = require('../controller/course.controller');
+    putCursos,
+    cursosDelete} = require('../controller/course.controller');
 
 const { existenteCurso, codigoCursoExiste, existenteCursoById} = require('../helpers/db-validators');
 
@@ -40,5 +41,14 @@ router.put(
         check('id').custom(existenteCursoById),
         validarCampos
     ], putCursos);
+
+
+router.delete(
+    "/:id",
+    [
+        check('id', 'No es un id valido ').isMongoId(),
+        check('id').custom(existenteCursoById),
+        validarCampos
+    ], cursosDelete);
 
 module.exports = router;
