@@ -15,7 +15,7 @@ const login = async (req = request, res = response) => {
             });
         }
 
-        if(persona.estado){
+        if(!persona.estado){
             return res.status(400).json({
                 msg: " El usuario no existe en la base de datos."
             });
