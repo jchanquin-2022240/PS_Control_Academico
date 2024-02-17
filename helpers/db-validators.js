@@ -1,5 +1,25 @@
+<<<<<<< HEAD
+=======
+const Role = require('../models/role');
+const Role = require('../models/role');
+>>>>>>> feature/persona
 const Persona = require("../models/persona");
 const Curso = require("../models/curso");
+
+const esRoleValido = async (role = '') => {
+    const existeRol = await Role.findOne({ role });
+    if (!existeRol) {
+        throw new Error(`El role ${role} no existe en la base de datos`);
+    }
+}
+
+//validar si el personaId existe
+const existentePersonaById = async (id = '') => {
+    const existePersonaById = await Persona.findOne({ id });
+    if (existePersonaById) {
+        throw new Error(`La persona con el ${id} no existe`)
+    }
+}
 
 const existenteEmail = async (correo = '') => {
     const existeEmail = await Persona.findOne({correo});
@@ -31,8 +51,13 @@ const existenteCursoById = async (id = '') => {
 }
 
 module.exports = {
+    esRoleValido,
     existenteEmail,
+<<<<<<< HEAD
     existenteCurso,
     codigoCursoExiste,
     existenteCursoById
+=======
+    existentePersonaById
+>>>>>>> feature/persona
 }
