@@ -32,17 +32,17 @@ const personasPost = async (req, res) => {
     });
 }
 
-const putPersonas = async (req, res) => {
+const putPersonas = async (req, res = response) => {
     const { id } = req.params;
-    const { _id, cursos, ...resto } = req.body;
+    const { _id, password, role, ...resto } = req.body;
 
     if (password) {
         const salt = bcryptjs.genSaltSync();
         resto.password = bcryptjs.hashSync(password, salt);
     }
 
-    await Persona.findByIdUpdate(id, resto);
-    const persona = Persona.findOne({ id });
+    await Persona.findByIdAndUpdate(id, resto);
+    const persona = Persona.findOne({id});
 
     res.status(200).json({
         msg: "Perfil Actualizado Correctamente!!!",
@@ -50,8 +50,21 @@ const putPersonas = async (req, res) => {
     });
 }
 
+const deletePersona = async(req, res, next) => {
+    const {id} = req.params;
+    const usuario = await Persona.findByIdAndUpdate(id, {estado: false});
+    const usuarioAutenticado = req.persona;
+
+    res.status(200).json({
+        msg: 'Usuario a eliminar',
+        usuario,
+        usuarioAutenticado
+    });
+}
+
 module.exports = {
     personasPost,
     personaGet,
-    putPersonas
+    putPersonas,
+    deletePersona
 }

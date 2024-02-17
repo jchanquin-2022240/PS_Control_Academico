@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 const Role = require('../models/role');
-const Role = require('../models/role');
->>>>>>> feature/persona
->>>>>>> developer
 const Persona = require("../models/persona");
 const Curso = require("../models/curso");
 
@@ -56,11 +49,8 @@ const existenteCursoById = async (id = '') => {
 module.exports = {
     esRoleValido,
     existenteEmail,
-<<<<<<< HEAD
     existenteCurso,
     codigoCursoExiste,
-    existenteCursoById
-=======
+    existenteCursoById,
     existentePersonaById
->>>>>>> feature/persona
 }

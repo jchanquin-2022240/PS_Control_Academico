@@ -2,8 +2,8 @@ const jwt = require('jsonwebtoken');
 const Persona = require('../models/persona');
 const {request, response} = require('express');
 
-const validarJWT = async(req, res, next) => {
-    const token = req.header('delete-token');
+const validarJWT = async(req = request, res = response, next) => {
+    const token = req.header('new-token');
 
     if (!token) {
         return res.status(401).json({
@@ -22,13 +22,14 @@ const validarJWT = async(req, res, next) => {
         }
 
         if (!persona.estado) {
-            return.res.status(401).json({
+            return res.status(401).json({
                 msg: "Token no válido, usuario con estado false"
             });
         }
 
         req.persona = persona;
         next();
+
     } catch (e) {
         console.log(e);
         res.status(401).json({

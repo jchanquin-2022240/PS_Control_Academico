@@ -2,21 +2,15 @@ const { Router } = require('express');
 const { check } = require('express-validator');
 
 const { validarCampos } = require ('../middlewares/validar-campos');
+const { validarJWT } = require('../middlewares/validar-jwt');
 
 const {
     personasPost,
-    personaGet} = require('../controller/person.controller');
+    personaGet,
+    putPersonas,
+    deletePersona} = require('../controller/person.controller');
 
-<<<<<<< HEAD
-const { existenteEmail} = require('../helpers/db-validators');
-=======
-<<<<<<< HEAD
-const { existenteEmail} = require('../helpers/db-validators');
-=======
-const { existenteEmail, esRoleValido} = require('../helpers/db-validators');
->>>>>>> feature/persona
->>>>>>> developer
-
+const { existenteEmail, esRoleValido, existentePersonaById } = require('../helpers/db-validators');
 
 const router = Router();
 
@@ -29,14 +23,28 @@ router.post(
         check("password","El password debe ser mayor a 8 caracteres").isLength({min:8}),
         check("correo","El correo no puede estar vacio").isEmail(),
         check("correo").custom(existenteEmail),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
         check("role").custom(esRoleValido),
->>>>>>> feature/persona
->>>>>>> developer
         validarCampos,
     ], personasPost);
+
+
+router.put(
+    "/:id",
+    [
+        check('id', 'No es un id válido').isMongoId(),
+        check('id').custom(existentePersonaById),
+        check("correo").custom(existenteEmail),
+        validarCampos
+    ], putPersonas);
+
+
+router.delete(
+    "/:id",
+    [
+        validarJWT,
+        check('id', 'No es un id válido').isMongoId(),
+        check('id').custom(existentePersonaById),
+        validarCampos
+    ], deletePersona);
 
 module.exports = router;
