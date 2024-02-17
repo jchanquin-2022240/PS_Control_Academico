@@ -32,7 +32,26 @@ const personasPost = async (req, res) => {
     });
 }
 
+const putPersonas = async (req, res) => {
+    const { id } = req.params;
+    const { _id, cursos, ...resto } = req.body;
+
+    if (password) {
+        const salt = bcryptjs.genSaltSync();
+        resto.password = bcryptjs.hashSync(password, salt);
+    }
+
+    await Persona.findByIdUpdate(id, resto);
+    const persona = Persona.findOne({ id });
+
+    res.status(200).json({
+        msg: "Perfil Actualizado Correctamente!!!",
+        persona
+    });
+}
+
 module.exports = {
     personasPost,
-    personaGet
+    personaGet,
+    putPersonas
 }
