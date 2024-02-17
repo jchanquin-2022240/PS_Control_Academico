@@ -1,4 +1,6 @@
-const esTeacherRole = (req, resp, next) => {
+const { response } = require("express");
+
+const esTeacherRole = (req, resp = response, next) => {
     if (!req.persona) {
         return resp.status(500).json({
             msg: "se quiere verificar un role sin validar el token primero"

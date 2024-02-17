@@ -3,6 +3,7 @@ const { check } = require('express-validator');
 
 const { validarCampos } = require ('../middlewares/validar-campos');
 const { validarJWT } = require('../middlewares/validar-jwt');
+const { esTeacherRole } = require('../middlewares/validar-role');
 
 const {
     personasPost,
@@ -14,7 +15,12 @@ const { existenteEmail, esRoleValido, existentePersonaById } = require('../helpe
 
 const router = Router();
 
-router.get("/", personaGet);
+router.get(
+    "/",
+    [
+        validarJWT,
+       esTeacherRole
+    ], personaGet);
 
 router.post(
     "/", 
@@ -31,6 +37,7 @@ router.post(
 router.put(
     "/:id",
     [
+        validarJWT,
         check('id', 'No es un id válido').isMongoId(),
         check('id').custom(existentePersonaById),
         check("correo").custom(existenteEmail),

@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "authLogin",
-    "dateExported": "2024-02-17T17:37:53.319Z",
+    "dateExported": "2024-02-17T23:30:55.941Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,14 +14,52 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-02-16T15:57:59.385Z",
-            "modified": "2024-02-17T15:11:21.801Z",
+            "modified": "2024-02-17T23:23:58.088Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"correo\": \"sperez@gmail.com\",\n  \"password\": \"12345678\"\n}",
+                "raw": "{\n  \"correo\": \"teacher1@gmail.com\",\n  \"password\": \"12345678\"\n}",
                 "form": []
             },
+            "tests": []
+        },
+        {
+            "_id": "611dad3d-ba4d-4f6f-b8c0-05601c8e8b9f",
+            "colId": "0ffa4c22-cb5e-4f42-b5f8-53b7bb4d7f63",
+            "containerId": "",
+            "name": "put perfil",
+            "url": "http://localhost:3000/api/persona/65d1400104154031813486e8",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-02-17T19:54:22.854Z",
+            "modified": "2024-02-17T23:25:36.139Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Teacher1\",\n  \"correo\":\"teacher1@kinal.org.gt\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cbed05fe-3e44-4cd5-a09a-6027f2ff74eb",
+            "colId": "0ffa4c22-cb5e-4f42-b5f8-53b7bb4d7f63",
+            "containerId": "",
+            "name": "delete perfil",
+            "url": "http://localhost:3000/api/persona/65d1085959f5565e0750ab05",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-02-17T22:38:32.171Z",
+            "modified": "2024-02-17T22:53:16.520Z",
+            "headers": [
+                {
+                    "name": "delete-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQxMDdmZDU5ZjU1NjVlMDc1MGFhZmYiLCJpYXQiOjE3MDgyMTAxNzcsImV4cCI6MTcwOTQ3MDE3N30.RFaaCas87brTbHgh0qJQT8-V2EvntahFMXXKDVxX034"
+                }
+            ],
+            "params": [],
             "tests": []
         }
     ]
