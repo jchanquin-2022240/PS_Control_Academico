@@ -20,6 +20,7 @@ const PersonaSchema = Schema({
     },
     role:{
         type: String,
+        require: true,
         enum: ["TEACHER_ROLE", "STUDENT_ROLE"]
     },
     estado:{
@@ -28,5 +29,11 @@ const PersonaSchema = Schema({
     }
 });
 
+
+/*PersonaSchema.methods.toJSON = function () {
+    const{__v, password, _id,...persona} = this.toObject();
+    persona.uid = _id;
+    return persona;
+}*/
 
 module.exports = model('Persona', PersonaSchema);
