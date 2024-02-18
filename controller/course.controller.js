@@ -58,7 +58,8 @@ const cursosDelete = async (req, res) => {
     const curso = await Curso.findByIdAndUpdate(id, {estadoCurso: false});
     
     res.status(200).json({
-        msq: 'Curso eliminado'
+        msq: 'Curso eliminado',
+        curso
     });
 }
 
