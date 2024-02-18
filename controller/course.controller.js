@@ -43,7 +43,7 @@ const putCursos = async ( req, res) => {
     const { _id,nombre, codigoCurso,...resto} = req.body;
 
     await Curso.findByIdAndUpdate(id, resto);
-    const curso = Curso.findOne({id});
+    const curso = await Curso.findOne({_id: id}).lean();
 
     //problemas con el traslado de convertir a .JSON
     res.status(200).json({

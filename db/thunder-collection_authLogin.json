@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "authLogin",
-    "dateExported": "2024-02-17T23:30:55.941Z",
+    "dateExported": "2024-02-18T05:04:38.096Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,12 +14,17 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-02-16T15:57:59.385Z",
-            "modified": "2024-02-17T23:23:58.088Z",
-            "headers": [],
+            "modified": "2024-02-18T04:59:22.702Z",
+            "headers": [
+                {
+                    "name": "new-token",
+                    "value": "65d18adda1baac2e6d0fffa2"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"correo\": \"teacher1@gmail.com\",\n  \"password\": \"12345678\"\n}",
+                "raw": "{\n  \"correo\": \"scarrera@kinal.org.gt\",\n  \"password\": \"12345678\"\n}",
                 "form": []
             },
             "tests": []
@@ -29,16 +34,21 @@
             "colId": "0ffa4c22-cb5e-4f42-b5f8-53b7bb4d7f63",
             "containerId": "",
             "name": "put perfil",
-            "url": "http://localhost:3000/api/persona/65d1400104154031813486e8",
+            "url": "http://localhost:3000/api/persona/65cf8a5767a5265d46116f8b",
             "method": "PUT",
             "sortNum": 20000,
             "created": "2024-02-17T19:54:22.854Z",
-            "modified": "2024-02-17T23:25:36.139Z",
-            "headers": [],
+            "modified": "2024-02-18T05:00:06.435Z",
+            "headers": [
+                {
+                    "name": "new-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWNmOGE1NzY3YTUyNjVkNDYxMTZmOGIiLCJpYXQiOjE3MDgyMzIzNjIsImV4cCI6MTcwOTQ5MjM2Mn0.118cgVfEDcsYp4vEodbmVRD7wlA-UPkc_jJ51wKYBHI"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Teacher1\",\n  \"correo\":\"teacher1@kinal.org.gt\"\n}",
+                "raw": "{\n  \"nombre\":\"Teacher1\",\n  \"correo\":\"teacher1@gmail.com\"\n}",
                 "form": []
             },
             "tests": []

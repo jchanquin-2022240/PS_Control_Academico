@@ -42,7 +42,7 @@ const putPersonas = async (req, res = response) => {
     }
 
     await Persona.findByIdAndUpdate(id, resto);
-    const persona = Persona.findOne({id});
+    const persona = await Persona.findOne({_id: id}).lean();
 
     res.status(200).json({
         msg: "Perfil Actualizado Correctamente!!!",

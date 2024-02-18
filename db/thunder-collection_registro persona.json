@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "registro persona",
-    "dateExported": "2024-02-17T23:31:16.732Z",
+    "dateExported": "2024-02-18T05:04:18.522Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,12 +14,12 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-02-15T07:24:28.567Z",
-            "modified": "2024-02-17T23:23:45.499Z",
+            "modified": "2024-02-18T04:43:09.879Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"nombre\": \"teacher1\",\n    \"correo\": \"teacher1@gmail.com\",\n    \"password\": \"12345678\",\n    \"role\": \"TEACHER_ROLE\"\n}",
+                "raw": "{\n    \"nombre\": \"teacher2\",\n    \"correo\": \"teacher2@gmail.com\",\n    \"password\": \"12345678\",\n    \"role\": \"TEACHER_ROLE\"\n}",
                 "form": []
             },
             "tests": []
