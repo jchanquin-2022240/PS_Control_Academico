@@ -17,7 +17,18 @@ const esTeacherRole = (req, resp = response, next) => {
     next();
 }
 
+/*const verificarRol = (rolesPermitidos) => {
+    return (req, res, next) => {
+        if (rolesPermitidos.includes(req.persona.role)) {
+            next();
+        } else {
+            res.status(403).json({ msg: 'No tienes permiso para realizar esta acción' });
+        }
+    };
+};*/
+
 module.exports = {
-    esTeacherRole
+    esTeacherRole,
+    verificarRol
 }
 

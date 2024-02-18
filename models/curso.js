@@ -16,6 +16,7 @@ const CursoSchema = Schema({
     //validar si existe el maestro
     maestro:{
         type: String,
+        ref: 'Persona',
         require: [true, 'El maestro es obligatorio']
     },
     estadoCurso:{
