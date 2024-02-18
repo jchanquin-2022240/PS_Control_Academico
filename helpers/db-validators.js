@@ -46,11 +46,32 @@ const existenteCursoById = async (id = '') => {
     }
 }
 
+//validar si existeAsinaciondeCurso
+const existenteRoleEnCurso = async (role, { req }) => {
+    const { id } = req.params;
+    const { cursos } = req.body;
+
+    // Verificar si el role ya está asignado a alguno de los cursos
+    const personasConRoleEnCurso = await Persona.find({
+        _id: { $ne: id }, // Excluir la persona actual
+        cursos: { $in: cursos },
+        role: role
+    });
+
+    if (personasConRoleEnCurso.length > 0) {
+        throw new Error(`El role ${role} ya está asignado a uno o más cursos.`);
+    }
+
+    return true;
+};
+
+
 module.exports = {
     esRoleValido,
     existenteEmail,
     existenteCurso,
     codigoCursoExiste,
     existenteCursoById,
-    existentePersonaById
+    existentePersonaById,
+    existenteRoleEnCurso
 }

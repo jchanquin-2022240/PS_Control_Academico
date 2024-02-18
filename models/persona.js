@@ -14,10 +14,10 @@ const PersonaSchema = Schema({
         type: String,
         required: [true, 'El password es obligatorio']
     },
-    cursos: [{
-        type: Schema.Types.ObjectId,
+    cursos: {
+        type: [Schema.Types.ObjectId],
         ref: 'Curso'
-    }],
+    },
     role:{
         type: String,
         require: true,
@@ -30,10 +30,10 @@ const PersonaSchema = Schema({
 });
 
 
-PersonaSchema.methods.toJSON = function () {
+/*PersonaSchema.methods.toJSON = function () {
     const{__v, password, _id,...persona} = this.toObject();
     persona.uid = _id;
     return persona;
-}
+}*/
 
 module.exports = model('Persona', PersonaSchema);

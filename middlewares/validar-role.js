@@ -28,7 +28,6 @@ const esTeacherRole = (req, resp = response, next) => {
 };*/
 
 module.exports = {
-    esTeacherRole,
-    verificarRol
+    esTeacherRole
 }
 
