@@ -14,10 +14,10 @@ const PersonaSchema = Schema({
         type: String,
         required: [true, 'El password es obligatorio']
     },
-    cursos:{
-        type: String,
-        default: "none"
-    },
+    cursos: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Curso'
+    }],
     role:{
         type: String,
         require: true,
