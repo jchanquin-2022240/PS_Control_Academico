@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "authLogin",
-    "dateExported": "2024-02-18T05:04:38.096Z",
+    "dateExported": "2024-02-19T02:13:06.280Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,17 +14,17 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-02-16T15:57:59.385Z",
-            "modified": "2024-02-18T04:59:22.702Z",
+            "modified": "2024-02-19T02:09:54.816Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "65d18adda1baac2e6d0fffa2"
+                    "value": "65d2489df7fcb9d9fd1bcf42"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"correo\": \"scarrera@kinal.org.gt\",\n  \"password\": \"12345678\"\n}",
+                "raw": "{\n  \"correo\": \"student1@kinal.edu.gt\",\n  \"password\": \"12345678\"\n}",
                 "form": []
             },
             "tests": []
@@ -34,21 +34,21 @@
             "colId": "0ffa4c22-cb5e-4f42-b5f8-53b7bb4d7f63",
             "containerId": "",
             "name": "put perfil",
-            "url": "http://localhost:3000/api/persona/65cf8a5767a5265d46116f8b",
+            "url": "http://localhost:3000/api/persona/65d24c3edf6b371b2d55f817",
             "method": "PUT",
             "sortNum": 20000,
             "created": "2024-02-17T19:54:22.854Z",
-            "modified": "2024-02-18T05:00:06.435Z",
+            "modified": "2024-02-18T20:10:53.124Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWNmOGE1NzY3YTUyNjVkNDYxMTZmOGIiLCJpYXQiOjE3MDgyMzIzNjIsImV4cCI6MTcwOTQ5MjM2Mn0.118cgVfEDcsYp4vEodbmVRD7wlA-UPkc_jJ51wKYBHI"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyNGMzZWRmNmIzNzFiMmQ1NWY4MTciLCJpYXQiOjE3MDgyODEzNDAsImV4cCI6MTcwOTU0MTM0MH0.mcbRFd440Yk5sP5ErYUHMxTJIIFUyrC3UbbnUH7l-Yo"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Teacher1\",\n  \"correo\":\"teacher1@gmail.com\"\n}",
+                "raw": "{\n  \"nombre\":\"Student1\",\n  \"correo\":\"student1@kinal.edu.gt\",\n  \"password\": \"12345678\",\n  \"cursos\": [\"65d24d2adf6b371b2d55f839\", \"65d24d3ddf6b371b2d55f83e\", \"65d24d4fdf6b371b2d55f843\"]\n}",
                 "form": []
             },
             "tests": []

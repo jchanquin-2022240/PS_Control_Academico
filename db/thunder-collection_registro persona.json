@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "registro persona",
-    "dateExported": "2024-02-18T05:04:18.522Z",
+    "dateExported": "2024-02-19T02:13:18.356Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,12 +14,12 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-02-15T07:24:28.567Z",
-            "modified": "2024-02-18T04:43:09.879Z",
+            "modified": "2024-02-18T18:28:55.121Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"nombre\": \"teacher2\",\n    \"correo\": \"teacher2@gmail.com\",\n    \"password\": \"12345678\",\n    \"role\": \"TEACHER_ROLE\"\n}",
+                "raw": "{\n    \"nombre\": \"teacher3\",\n    \"correo\": \"teacher3@gmail.com\",\n    \"password\": \"12345678\",\n    \"role\": \"TEACHER_ROLE\"\n}",
                 "form": []
             },
             "tests": []
@@ -33,11 +33,11 @@
             "method": "GET",
             "sortNum": 20000,
             "created": "2024-02-15T07:24:28.568Z",
-            "modified": "2024-02-17T23:24:13.137Z",
+            "modified": "2024-02-18T18:31:03.447Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQxNDAwMTA0MTU0MDMxODEzNDg2ZTgiLCJpYXQiOjE3MDgyMTIyMzgsImV4cCI6MTcwOTQ3MjIzOH0.TpI5M6RzxFKRPBDMaJMwTKKwuaWa2ANNhZQeWEP0BG4"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyNGM1YmRmNmIzNzFiMmQ1NWY4MjMiLCJpYXQiOjE3MDgyODEwNDYsImV4cCI6MTcwOTU0MTA0Nn0.D230cgnte3JsADP0RSnhAZSB9guo-R12PCOshLF_KWQ"
                 }
             ],
             "params": [],
