@@ -16,11 +16,13 @@ const { existenteCurso, codigoCursoExiste, existenteCursoById} = require('../hel
 
 const router = Router();
 
-router.get("/", cursoGet); //listado de cursos
+router.get('/cursos', validarJWT, cursoGet);
 
 router.get(
     "/:id",
     [
+        validarJWT,
+        esTeacherRole,
         check('id', 'No es un id válido').isMongoId(),
         check('id').custom(existenteCursoById),
         validarCampos

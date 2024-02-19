@@ -65,6 +65,16 @@ const existenteRoleEnCurso = async (role, { req }) => {
     return true;
 };
 
+const obtenerCursosAsignados = async (personaId) => {
+    try {
+        const persona = await Persona.findById(personaId);
+        return persona ? persona.cursos : [];
+    } catch (error) {
+        console.error('Error al obtener cursos asignados:', error);
+        throw new Error('Error al obtener cursos asignados.');
+    }
+};
+
 
 module.exports = {
     esRoleValido,
@@ -73,5 +83,6 @@ module.exports = {
     codigoCursoExiste,
     existenteCursoById,
     existentePersonaById,
-    existenteRoleEnCurso
+    existenteRoleEnCurso,
+    obtenerCursosAsignados
 }

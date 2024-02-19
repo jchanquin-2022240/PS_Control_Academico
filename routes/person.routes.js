@@ -41,13 +41,6 @@ router.put(
         check('id', 'No es un id válido').isMongoId(),
         check('id').custom(existentePersonaById),
         check("correo").custom(existenteEmail),
-        /*check("role").custom(() => {
-            // Verificar si el role es válido
-            if (value !== "STUDENT_ROLE" && value !== "TEACHER_ROLE") {
-                throw new Error("El role debe ser STUDENT_ROLE o TEACHER_ROLE.");
-            }
-            return true;
-        }),*/
         check("role").custom(existenteRoleEnCurso),
         validarCampos
     ], putPersonas);
