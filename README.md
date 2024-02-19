@@ -21,4 +21,5 @@ también a los alumnos el curso.
 4. En el caso de eliminar un curso con alumnos asignados se deberá
 desasignar a los alumnos el curso de forma automática. 
 
+![kinal](https://github.com/jchanquin-2022240/PS_control_academico/assets/112147678/47e01174-8839-4e7c-b6d6-bd4d96980297)
 
