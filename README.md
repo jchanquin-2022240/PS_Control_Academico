@@ -4,7 +4,7 @@
 API de control académico desarrollada con Nodejs, MongoDB y Express.
 
 ## STUDENT
-1. Puede registrarse como “STUDENT_ROLE” por defecto y logearse.
+1. Puede registrarse como “STUDENT_ROLE” y logearse.
 2. El alumno podrá asignarse a como máximo 3 cursos.
 3. No podrá asignarse a un curso que ya se encuentra asignado.
 
