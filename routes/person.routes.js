@@ -19,7 +19,7 @@ router.get(
     "/",
     [
         validarJWT,
-       esTeacherRole
+        esTeacherRole,
     ], personaGet);
 
 router.post(

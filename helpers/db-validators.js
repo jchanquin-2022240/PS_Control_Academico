@@ -1,12 +1,12 @@
-const Role = require('../models/role');
 const Persona = require("../models/persona");
 const Curso = require("../models/curso");
 
 const esRoleValido = async (role = '') => {
-    const existeRol = await Role.findOne({ role });
-    if (!existeRol) {
-        throw new Error(`El role ${role} no existe en la base de datos`);
+    if(role === "TEACHER_ROLE" || role === "STUDENT_ROLE"){
+        return;
     }
+
+    throw new Error('No es ningun role' );
 }
 
 //validar si el personaId existe
