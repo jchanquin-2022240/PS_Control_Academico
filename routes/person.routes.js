@@ -50,7 +50,7 @@ router.delete(
     "/:id",
     [
         validarJWT,
-        esTeacherRole,
+        //esTeacherRole,
         check('id', 'No es un id válido').isMongoId(),
         check('id').custom(existentePersonaById),
         validarCampos
