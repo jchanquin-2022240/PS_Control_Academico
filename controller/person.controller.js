@@ -93,13 +93,13 @@ const putPersonas = async (req, res = response) => {
 
 const deletePersona = async(req, res, next) => {
     const {id} = req.params;
-    const usuario = await Persona.findByIdAndUpdate(id, {estado: false});
-    const usuarioAutenticado = req.persona;
+    const persona = await Persona.findByIdAndUpdate(id, {estado: false});
+    const personaAutenticado = req.persona;
 
     res.status(200).json({
-        msg: 'Usuario a eliminar',
-        usuario,
-        usuarioAutenticado
+        msg: 'Persona a eliminar',
+        persona,
+        personaAutenticado
     });
 }
 
