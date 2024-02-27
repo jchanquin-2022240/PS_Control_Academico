@@ -1,20 +1,20 @@
 {
     "client": "Thunder Client",
     "collectionName": "authLogin",
-    "dateExported": "2024-02-19T02:13:06.280Z",
+    "dateExported": "2024-02-27T23:20:18.765Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "3ff3ab63-cd62-400f-8763-ff5d00221200",
-            "colId": "0ffa4c22-cb5e-4f42-b5f8-53b7bb4d7f63",
+            "_id": "650a6b66-2a94-46d0-8a94-6554074456ac",
+            "colId": "24aa955e-085f-4484-8727-7d4b7bc05374",
             "containerId": "",
             "name": "post login",
             "url": "http://localhost:3000/api/auth/login",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-02-16T15:57:59.385Z",
-            "modified": "2024-02-19T02:09:54.816Z",
+            "created": "2024-02-27T19:18:58.271Z",
+            "modified": "2024-02-27T22:38:14.421Z",
             "headers": [
                 {
                     "name": "new-token",
@@ -24,49 +24,49 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"correo\": \"student1@kinal.edu.gt\",\n  \"password\": \"12345678\"\n}",
+                "raw": "{\n  \"correo\": \"student1@gmail.com\",\n  \"password\": \"12345678\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "611dad3d-ba4d-4f6f-b8c0-05601c8e8b9f",
-            "colId": "0ffa4c22-cb5e-4f42-b5f8-53b7bb4d7f63",
+            "_id": "7b0ee993-da97-4e32-9234-51419ccf179c",
+            "colId": "24aa955e-085f-4484-8727-7d4b7bc05374",
             "containerId": "",
-            "name": "put perfil",
-            "url": "http://localhost:3000/api/persona/65d24c3edf6b371b2d55f817",
+            "name": "put perfil - asignarC",
+            "url": "http://localhost:3000/api/persona/65de644ac847cfecb0a48bdf",
             "method": "PUT",
             "sortNum": 20000,
-            "created": "2024-02-17T19:54:22.854Z",
-            "modified": "2024-02-18T20:10:53.124Z",
+            "created": "2024-02-27T19:18:58.272Z",
+            "modified": "2024-02-27T22:39:20.144Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyNGMzZWRmNmIzNzFiMmQ1NWY4MTciLCJpYXQiOjE3MDgyODEzNDAsImV4cCI6MTcwOTU0MTM0MH0.mcbRFd440Yk5sP5ErYUHMxTJIIFUyrC3UbbnUH7l-Yo"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNjQ0YWM4NDdjZmVjYjBhNDhiZGYiLCJpYXQiOjE3MDkwNzM0OTQsImV4cCI6MTcwOTA3NzA5NH0.1RkhsGr2Nur66kWCS4D-EEYY-QUxC5PGr1Q4pwlo8mA"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\":\"Student1\",\n  \"correo\":\"student1@kinal.edu.gt\",\n  \"password\": \"12345678\",\n  \"cursos\": [\"65d24d2adf6b371b2d55f839\", \"65d24d3ddf6b371b2d55f83e\", \"65d24d4fdf6b371b2d55f843\"]\n}",
+                "raw": "{\n  \"nombre\":\"Student1\",\n  \"correo\":\"student1@kinal.edu.gt\",\n  \"password\": \"12345678\",\n  \"cursos\": [\"Fifu\", \"Literatura\", \"Taller\"]\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "cbed05fe-3e44-4cd5-a09a-6027f2ff74eb",
-            "colId": "0ffa4c22-cb5e-4f42-b5f8-53b7bb4d7f63",
+            "_id": "3231dc1d-c4e0-4eed-a74b-57999c1ce07d",
+            "colId": "24aa955e-085f-4484-8727-7d4b7bc05374",
             "containerId": "",
             "name": "delete perfil",
-            "url": "http://localhost:3000/api/persona/65d1085959f5565e0750ab05",
+            "url": "http://localhost:3000/api/persona/65de4a7666f362c39721f638",
             "method": "DELETE",
             "sortNum": 30000,
-            "created": "2024-02-17T22:38:32.171Z",
-            "modified": "2024-02-17T22:53:16.520Z",
+            "created": "2024-02-27T19:18:58.273Z",
+            "modified": "2024-02-27T21:53:13.734Z",
             "headers": [
                 {
-                    "name": "delete-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQxMDdmZDU5ZjU1NjVlMDc1MGFhZmYiLCJpYXQiOjE3MDgyMTAxNzcsImV4cCI6MTcwOTQ3MDE3N30.RFaaCas87brTbHgh0qJQT8-V2EvntahFMXXKDVxX034"
+                    "name": "new-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNGE0YzY2ZjM2MmMzOTcyMWY2MzUiLCJpYXQiOjE3MDkwNzAxNTcsImV4cCI6MTcwOTA3Mzc1N30.JIMfXcrXk985puIVaiEy8-ECiIjMvRaBBa_5vki1xJ0"
                 }
             ],
             "params": [],

@@ -1,81 +1,81 @@
 {
     "client": "Thunder Client",
     "collectionName": "cursos",
-    "dateExported": "2024-02-19T02:13:12.878Z",
+    "dateExported": "2024-02-27T23:21:17.524Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "9b2c1288-6829-49ce-82ff-0ff5cd4aff16",
-            "colId": "b341f5af-0ec4-457b-9f1e-11f87ed20094",
+            "_id": "4f0ef860-81ef-4753-a128-703ca1d8ed96",
+            "colId": "42008430-fc1a-4128-8f3f-23a6eb92aa46",
             "containerId": "",
             "name": "post cursos",
             "url": "http://localhost:3000/api/curso",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-02-15T07:24:41.288Z",
-            "modified": "2024-02-18T18:33:51.047Z",
+            "created": "2024-02-27T19:18:47.521Z",
+            "modified": "2024-02-27T22:37:31.230Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyNGM1YmRmNmIzNzFiMmQ1NWY4MjMiLCJpYXQiOjE3MDgyODEwNDYsImV4cCI6MTcwOTU0MTA0Nn0.D230cgnte3JsADP0RSnhAZSB9guo-R12PCOshLF_KWQ"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNjNhZWM4NDdjZmVjYjBhNDhiYzQiLCJpYXQiOjE3MDkwNzMzNjgsImV4cCI6MTcwOTA3Njk2OH0.06dgJCrztOxIOLy0DbRe_prCZMkmn2cxhkRswVkNp6o"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{ \n  \"nombre\": \"Literatura\",\n  \"codigoCurso\": \"L2024\",\n  \"descripcion\": \"curso de idioma Español\",\n  \"maestro\": \"Mañen\"\n}",
+                "raw": "{ \n  \"nombre\": \"literatura\",\n  \"codigoCurso\": \"L2024\",\n  \"descripcion\": \"curso de lengua\",\n  \"maestro\": \"mañen\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "68b9c32c-f16f-45b9-b33a-dcf6c2f583c9",
-            "colId": "b341f5af-0ec4-457b-9f1e-11f87ed20094",
+            "_id": "28856d14-7487-42ed-809f-d202c4baaba8",
+            "colId": "42008430-fc1a-4128-8f3f-23a6eb92aa46",
             "containerId": "",
             "name": "get cursos",
             "url": "http://localhost:3000/api/curso/cursos",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-02-15T07:24:41.289Z",
-            "modified": "2024-02-19T02:10:07.473Z",
+            "created": "2024-02-27T19:18:47.522Z",
+            "modified": "2024-02-27T22:37:39.694Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyNGMzZWRmNmIzNzFiMmQ1NWY4MTciLCJpYXQiOjE3MDgzMDg1OTQsImV4cCI6MTcwOTU2ODU5NH0.WCzbtGQAxcXmVJ_lcVll0nC701KXSDv5vzPaOpEOado"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNjNhZWM4NDdjZmVjYjBhNDhiYzQiLCJpYXQiOjE3MDkwNzMzNjgsImV4cCI6MTcwOTA3Njk2OH0.06dgJCrztOxIOLy0DbRe_prCZMkmn2cxhkRswVkNp6o"
                 }
             ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "20694459-c692-4b8f-95a5-e167cb3b9c8d",
-            "colId": "b341f5af-0ec4-457b-9f1e-11f87ed20094",
+            "_id": "9004be78-ca73-4ffe-a01a-c0428ead2028",
+            "colId": "42008430-fc1a-4128-8f3f-23a6eb92aa46",
             "containerId": "",
             "name": "get cursoById",
             "url": "http://localhost:3000/api/curso/65d24d2adf6b371b2d55f839",
             "method": "GET",
             "sortNum": 30000,
-            "created": "2024-02-15T07:24:41.290Z",
-            "modified": "2024-02-18T18:34:11.664Z",
+            "created": "2024-02-27T19:18:47.523Z",
+            "modified": "2024-02-27T19:18:47.523Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "e917c4dc-124f-4227-89ab-39de1d9bcf1a",
-            "colId": "b341f5af-0ec4-457b-9f1e-11f87ed20094",
+            "_id": "0a45ae56-9c76-415e-acc5-26ae7f9c38e3",
+            "colId": "42008430-fc1a-4128-8f3f-23a6eb92aa46",
             "containerId": "",
             "name": "put cursos",
-            "url": "http://localhost:3000/api/curso/65d24d4fdf6b371b2d55f843",
+            "url": "http://localhost:3000/api/curso/65de565b564efdb58a672d4d",
             "method": "PUT",
             "sortNum": 40000,
-            "created": "2024-02-15T07:24:41.291Z",
-            "modified": "2024-02-19T02:09:33.803Z",
+            "created": "2024-02-27T19:18:47.524Z",
+            "modified": "2024-02-27T21:43:42.270Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyNGM1YmRmNmIzNzFiMmQ1NWY4MjMiLCJpYXQiOjE3MDgzMDg1MDEsImV4cCI6MTcwOTU2ODUwMX0.rTYjXzAgs1yg24cT1Okir8aai3S4kZQ92dZI2wHWPDs"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNGE0YzY2ZjM2MmMzOTcyMWY2MzUiLCJpYXQiOjE3MDkwNzAxNTcsImV4cCI6MTcwOTA3Mzc1N30.JIMfXcrXk985puIVaiEy8-ECiIjMvRaBBa_5vki1xJ0"
                 }
             ],
             "params": [],
@@ -87,19 +87,19 @@
             "tests": []
         },
         {
-            "_id": "cd4a8a93-c4fc-41eb-bcf9-ea980e3a5977",
-            "colId": "b341f5af-0ec4-457b-9f1e-11f87ed20094",
+            "_id": "75fb1009-969e-4730-9d11-f778931422c2",
+            "colId": "42008430-fc1a-4128-8f3f-23a6eb92aa46",
             "containerId": "",
             "name": "delete curso",
-            "url": "http://localhost:3000/api/curso/65d24d2adf6b371b2d55f839",
+            "url": "http://localhost:3000/api/curso/65de565b564efdb58a672d4d",
             "method": "DELETE",
             "sortNum": 50000,
-            "created": "2024-02-16T07:04:35.956Z",
-            "modified": "2024-02-19T02:06:41.476Z",
+            "created": "2024-02-27T19:18:47.525Z",
+            "modified": "2024-02-27T21:43:46.410Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQyNGM1YmRmNmIzNzFiMmQ1NWY4MjMiLCJpYXQiOjE3MDgzMDgzNzcsImV4cCI6MTcwOTU2ODM3N30.5SdysH6QtUQHTuUKaAaibJRDNCmReMZkKyqXqXMaakY"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNGE0YzY2ZjM2MmMzOTcyMWY2MzUiLCJpYXQiOjE3MDkwNzAxNTcsImV4cCI6MTcwOTA3Mzc1N30.JIMfXcrXk985puIVaiEy8-ECiIjMvRaBBa_5vki1xJ0"
                 }
             ],
             "params": [],

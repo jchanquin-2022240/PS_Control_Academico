@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "registro student",
+    "dateExported": "2024-02-27T23:19:09.550Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "565adc58-7098-4e84-8fa9-6ff7cf35d50b",
+            "colId": "2c6fa8bc-3671-4f00-ac54-e307eee575a4",
+            "containerId": "",
+            "name": "post student",
+            "url": "http://localhost:3000/api/persona",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-27T19:59:13.451Z",
+            "modified": "2024-02-27T22:38:02.506Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nombre\": \"student1\",\n    \"correo\": \"student1@gmail.com\",\n    \"password\": \"12345678\",\n    \"role\": \"STUDENT_ROLE\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
